@@ -1,7 +1,17 @@
-import { Inter } from 'next/font/google';
+import { Inter, Lora, Lusitana } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] });
 
-const general = Inter({ subsets: ['cyrillic'] });
+const lora = Lora({
+  weight: ['400', '700'],
+  style: ['italic', 'normal'],
 
-export { inter, general };
+  subsets: ['cyrillic'],
+});
+
+const lusitana = Lusitana({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+});
+
+export { inter, lora, lusitana };
